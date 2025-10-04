@@ -3,13 +3,12 @@
         // Everyone
         // Always keep help at zero
         "help": 0,
-        "fly": 0,
-        
         "online": 0,
-        "soloparty": 0,
-        "teleport": 0,
-        
+
         // Moderaters
+        "fly": 50,
+        "teleport": 50,
+        "soloparty": 50,
         "announce": 50,
         "despawn": 50,
         "dist": 50,
@@ -27,7 +26,7 @@
         "showinv": 50,
         "spawn": 50,
         "coffer": 50,
-        
+
         // Admin
         "addbuff": 100,
         "addgold": 100,
@@ -74,7 +73,7 @@
         "useskill": 100,
         "wipeauctionhouse": 100,
         "zonestate": 100,
-        
+
         // Disabled
         "testtransfer": 999
     }

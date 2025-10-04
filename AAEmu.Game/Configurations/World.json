@@ -1,6 +1,6 @@
 {
     "World": {
-        "MOTD": "Welcome to AAEmu!",
+        "MOTD": "Welcome!",
         "LogoutMessage": "Hope to see you soon.",
         "AutoSaveInterval": 5.0,
         "ExpRate": 1.0,
@@ -12,7 +12,7 @@
         "DaysForTaxPayment": 7,
         "IgnoreFallDamageAccessLevel": 100,
         "GodMode": false,
-        "GeoDataMode": true,
+        "GeoDataMode": false,
         "PreLoadTerrain": false,
         "MaxInstances": 32,
         "TargetPhysicsTps": 25.0,
