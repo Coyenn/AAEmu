@@ -1416,10 +1416,10 @@ public partial class Npc : Unit
         Ai.PathNode.FoundPath = reducedPath;
         if (abuser is Character player)
         {
-            player.SendMessage($"Aggro from {Ai.Owner.ObjId}, getting attack path in {Ai.PathNode.FoundPath.Count}/{resList.Count} steps");
+            player.SendDebugMessage($"Aggro from {Ai.Owner.ObjId}, getting attack path in {Ai.PathNode.FoundPath.Count}/{resList.Count} steps");
             foreach (var v3 in Ai.PathNode.FoundPath)
             {
-                player.SendMessage($"Path step -> {v3}");
+                player.SendDebugMessage($"Path step -> {v3}");
             }
         }
     }

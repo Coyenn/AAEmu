@@ -71,7 +71,7 @@ public class CapturePet : SpecialEffectAction
         }
         else
         {
-            player.SendMessage($"Unable to capture this target yet, take a screenshot of this, and inform the developers. NPC {targetNpc.TemplateId}");
+            player.SendDebugMessage($"Unable to capture this target yet, take a screenshot of this, and inform the developers. NPC {targetNpc.TemplateId}");
         }
     }
 }
