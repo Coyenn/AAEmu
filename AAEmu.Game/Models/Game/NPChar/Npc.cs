@@ -886,9 +886,10 @@ public partial class Npc : Unit
             var mateList = characterKiller.ParentWorld.MateManager.GetActiveMates(characterKiller.Id);
             foreach(var mate in mateList)
             {
+                var petLabel = string.IsNullOrWhiteSpace(mate.Name) ? "Your pet" : mate.Name;
+
                 mate.AddExp(KillExp);
-                // TODO: Proper message?
-                characterKiller.SendMessage($"Pet gained {KillExp} XP");
+                characterKiller.SendMessage($"{petLabel} gained {KillExp} XP.");
             }
         }
         else
@@ -982,8 +983,8 @@ public partial class Npc : Unit
                     foreach(var mate in mateList)
                     {
                         mate.AddExp(mateKillXp);
-                        // TODO: Proper message?
-                        pl.SendMessage($"Pet gained {mateKillXp} XP");
+                        var petLabel = string.IsNullOrWhiteSpace(mate.Name) ? "Your pet" : $"Your pet {mate.Name}";
+                        pl.SendMessage($"{petLabel} gained {mateKillXp} XP.");
                     }
                 }
 
