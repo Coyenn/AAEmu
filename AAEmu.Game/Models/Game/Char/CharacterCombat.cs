@@ -20,6 +20,9 @@ public partial class Character
 
     public override void DoDie(BaseUnit killer, KillReason killReason)
     {
+        // Force dismount before calling base DoDie to ensure proper death handling while mounted
+        ForceDismount(AttachUnitReason.NewMaster);
+        
         base.DoDie(killer, killReason);
 
         if (killer is Character enemy && enemy.Faction.MotherId != Faction.MotherId)
